@@ -1,0 +1,14 @@
+download.file("https://raw.githubusercontent.com/markziemann/SLE712_files/master/week10_files/gene_expression.tsv", destfile="gene_expression.tsv")
+head(read.table("gene_expression.tsv"))
+m<-read.table("gene_expression.tsv")
+typeof(m)
+str(m)
+m<-read.table("gene_expression.tsv",header=T)
+m
+head(m)
+srt(m)
+m<-read.table("gene_expression.tsv",header=T,row.names=1)
+str(m)
+head(m)
+pairs(m)
+m
